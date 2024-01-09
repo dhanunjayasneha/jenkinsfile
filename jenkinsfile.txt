@@ -1,0 +1,29 @@
+pipeline{
+agent any
+stages{
+stage('First stage')
+{
+steps{
+echo 'Fetching the code from github'
+}
+}
+stage('Second stage')
+{
+steps{
+echo 'This is bulid phase'
+}
+}
+stage('Third stage')
+{
+steps{
+echo 'This is testing phase'
+}
+}
+stage('Fourth stage')
+{
+steps{
+echo 'This is deploy phase'
+}
+}
+}
+}
