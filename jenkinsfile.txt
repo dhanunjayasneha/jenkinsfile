@@ -4,13 +4,13 @@ stages{
 stage('First stage')
 {
 steps{
-echo 'Fetching the code from github'
+git branch: 'main', url: 'https://github.com/dhanunjayasneha/mock2.git'
 }
 }
 stage('Second stage')
 {
 steps{
-echo 'This is bulid phase'
+build 'maven_job'
 }
 }
 stage('Third stage')
