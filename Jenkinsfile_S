@@ -1,0 +1,15 @@
+node{
+stage('First stage'){
+https://github.com/dhanunjayasneha/test.git
+}
+stage('Second stage'){
+build 'Git integration'
+}
+stage('Third stage'){
+echo 'This is testing stage'
+}
+stage('Fourth stage'){
+echo 'This is deploy stage'
+}
+}
+
