@@ -4,13 +4,12 @@ stages{
 stage('First stage')
 {
 steps{
-git branch: 'main', url: 'https://github.com/dhanunjayasneha/mock2.git'
-}
+git branch: 'master', url: 'https://github.com/dhanunjayasneha/t1.git'
 }
 stage('Second stage')
 {
 steps{
-build 'maven_job'
+build 'sample_job'
 }
 }
 stage('Third stage')
