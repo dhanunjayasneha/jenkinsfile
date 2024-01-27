@@ -10,7 +10,7 @@ git branch: 'master', url: 'https://github.com/dhanunjayasneha/t1.git'
 stage('Second stage')
 {
 steps{
-build 'sample_job'
+build 'git_job'
 }
 }
 stage('Third stage')
